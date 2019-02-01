@@ -17,7 +17,6 @@ package ru.lebedev.se.HomeWork1.Fruits;
 Не забываем про метод добавления фрукта в коробку.
  */
 
-
 public class Fruits {
     public static void main(String[] args) {
 
@@ -52,7 +51,6 @@ public class Fruits {
                 + boxWithApples.getWeight());
         System.out.println("В другой коробке с яблоками " + anotherBoxWithApples.getCountFruits() + " яблок, весом "
                 + anotherBoxWithApples.getWeight());
-
     }
 }
 
