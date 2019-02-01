@@ -21,13 +21,15 @@ package ru.lebedev.se.HomeWork1.Fruits;
 public class Fruits {
     public static void main(String[] args) {
 
-        Box<Apple> boxWithApples = new Box<>(new Apple());
         Box<Orange> boxWithOranges = new Box<>(new Orange());
+        Box<Apple> boxWithApples = new Box<>(new Apple());
         Box<Apple> anotherBoxWithApples = new Box<>(new Apple());
 
-        boxWithApples.addToBox(new Apple());
-        boxWithApples.addToBox(new Apple());
         boxWithOranges.addToBox(new Orange());
+        boxWithOranges.addToBox(new Orange());
+        boxWithApples.addToBox(new Apple());
+        boxWithApples.addToBox(new Apple());
+        boxWithApples.addToBox(new Apple());
 
         System.out.println("В коробке с апельсинами " + boxWithOranges.getCountFruits() + " апельсинов, весом "
                 + boxWithOranges.getWeight());

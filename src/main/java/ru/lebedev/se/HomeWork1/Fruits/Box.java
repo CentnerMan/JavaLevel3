@@ -6,8 +6,12 @@ import java.util.Arrays;
 public class Box<T extends Fruit> {
     ArrayList<T> box = new ArrayList(); // массив фруктов
 
-    public Box(T... fruits) {
-        box = new ArrayList<>(Arrays.asList(fruits));
+//    public Box(T... fruits) {
+//        box = new ArrayList<>(Arrays.asList(fruits)); // При вызове сразу добавляется 1 фрукт
+//    }
+
+    public Box(T fruit) {
+        // Конструктор просто инициализирует T в тип фрукта. Хотя объект фрукта создается через new, в список не добавляется
     }
 
     public float getWeight() {
@@ -37,6 +41,6 @@ public class Box<T extends Fruit> {
 
     public void moveFruitsToAnotherBox(Box<T> anotherBox) {
         anotherBox.box.addAll(this.box);
-        this.box.clear();
+        this.clearBox();
     }
 }
