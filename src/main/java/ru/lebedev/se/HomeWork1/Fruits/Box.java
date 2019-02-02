@@ -3,10 +3,10 @@ package ru.lebedev.se.HomeWork1.Fruits;
 import java.util.ArrayList;
 
 public class Box<T extends Fruit> {
-    ArrayList<T> box = new ArrayList(); // массив фруктов
+    ArrayList<T> box; // массив фруктов
 
     public Box(T fruit) {
-        // Конструктор просто инициализирует T в тип фрукта. Хотя объект фрукта создается через new, в список не добавляется
+        box = new ArrayList();
     }
 
     public float getWeight() {
