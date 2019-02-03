@@ -34,7 +34,7 @@ public class Box<T extends Fruit> {
         box.clear();
     }
 
-    public void moveFruitsToAnotherBox(Box<T> anotherBox) {
+    public void moveFruitsToAnotherBox(Box<? super T> anotherBox) {
         anotherBox.box.addAll(this.box);
         this.clearBox();
     }
