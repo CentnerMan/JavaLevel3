@@ -1,4 +1,4 @@
-package NetworkChatWithDB.Server;
+package ru.lebedev.se.NetworkChatWithDB.Server;
 
 
 import java.sql.*;

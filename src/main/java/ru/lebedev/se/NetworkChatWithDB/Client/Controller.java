@@ -1,9 +1,12 @@
-package NetworkChatWithDB.Client;
+package ru.lebedev.se.NetworkChatWithDB.Client;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.ListView;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 
 import java.io.DataInputStream;

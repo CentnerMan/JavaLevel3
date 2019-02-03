@@ -1,4 +1,4 @@
-package NetworkChatWithDB.Client;
+package ru.lebedev.se.NetworkChatWithDB.Client;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
