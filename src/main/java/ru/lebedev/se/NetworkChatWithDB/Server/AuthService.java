@@ -12,6 +12,7 @@ public class AuthService {
     public static void connect() throws SQLException {
         try {
             Class.forName("org.sqlite.JDBC");
+            // UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='students' - обнуление счетчика
             connection = DriverManager.getConnection("jdbc:sqlite:mainDB.db");
             stmt = connection.createStatement();
         } catch (ClassNotFoundException e) {
