@@ -1,6 +1,6 @@
 package ru.lebedev.se.HomeWork1.Fruits;
 
-public class Fruit {
+abstract class Fruit {
 
     protected float weight;
 
