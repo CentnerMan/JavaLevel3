@@ -53,31 +53,32 @@ public class Products {
 
         // Создаем таблицу, если ее нет
 
-        String sql = String.format("CREATE TABLE IF NOT EXISTS Products\n" +
-                "(\n" +
-                "  id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL,\n" +
-                "  prodid INTEGER UNIQUE NOT NULL,\n" +
-                "  title TEXT NOT NULL,\n" +
-                "  cost INTEGER NOT NULL\n" +
-                ")");
+        String sql = String.format("CREATE TABLE IF NOT EXISTS Products\n"
+                + "(\n"
+                + "  id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL,\n"
+                + "  prodid INTEGER UNIQUE NOT NULL,\n"
+                + "  title TEXT NOT NULL,\n"
+                + "  cost INTEGER NOT NULL\n"
+                + ")");
         stmt.execute(sql);
 
         // Очищаем таблицу
 
-        sql=String.format("DELETE FROM Products");
+        sql = String.format("DELETE FROM Products");
         stmt.executeUpdate(sql);
 
         // Сбрасываем счетчик
 
-        sql=String.format("UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='Products'");
+        sql = String.format("UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='Products'");
         stmt.execute(sql);
 
         // Добавляем 10000 товаров
 
         connection.setAutoCommit(false);
 
-        pstmt = connection.prepareStatement("INSERT INTO Products (prodid, title, cost)\n" +
-                "VALUES (?, ?, ?)");
+        pstmt = connection.prepareStatement("INSERT INTO Products (prodid, title, cost)\n"
+                + "VALUES (?, ?, ?)");
+
 
         for (int i = 1; i <= 10000; i++) {
             pstmt.setInt(1, i);
