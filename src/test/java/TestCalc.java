@@ -1,5 +1,5 @@
-import Lesson_6.Calculator;
 import org.junit.*;
+import ru.lebedev.se.Homework6.lesson6.Calculator;
 
 public class TestCalc {
 

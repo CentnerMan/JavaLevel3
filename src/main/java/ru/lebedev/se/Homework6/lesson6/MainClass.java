@@ -1,10 +1,7 @@
-package Lesson_6;
-
-
-
+package ru.lebedev.se.Homework6.lesson6;
 
 import org.apache.log4j.Logger;
-import java.io.FileInputStream;
+
 import java.io.IOException;
 
 public class MainClass {

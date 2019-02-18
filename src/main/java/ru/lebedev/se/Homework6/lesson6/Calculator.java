@@ -1,4 +1,4 @@
-package Lesson_6;
+package ru.lebedev.se.Homework6.lesson6;
 
 public class Calculator {
 
